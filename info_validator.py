@@ -9,9 +9,9 @@ while True:
 
     if all(x.isalpha() or x.isspace() for x in name):
 
-        name = name.split()
+        name_len = name.split()
 
-        if len(name) < 2:
+        if len(name_len) < 2:
             print("Please enter both a first and last name")
             continue
         else:
@@ -39,5 +39,10 @@ while True:
     else:
         print('Address Invalid')
 
+goals = input("What are your goals? ")
 
-# check that address is
+
+print(f"Name: {name}")
+print(f"Birthday: {birthday}")
+print(f"Address: {address}")
+print(f"Goals: {goals}")
